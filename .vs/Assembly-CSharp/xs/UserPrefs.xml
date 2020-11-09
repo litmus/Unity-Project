@@ -1,8 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Maily.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Ash/EngagementManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/Maily.cs" Line="24" Column="1" />
-      <File FileName="Assets/Scripts/Trigger.cs" Line="22" Column="6" />
+      <File FileName="Assets/Scripts/Maily.cs" Line="16" Column="1" />
+      <File FileName="Assets/Scripts/Trigger.cs" Line="27" Column="1" />
+      <File FileName="Assets/Scripts/Ash/Player.cs" Line="12" Column="9" />
+      <File FileName="Assets/Scripts/Ash/Engagement.cs" Line="21" Column="6" />
+      <File FileName="Assets/Scripts/Ash/EngagementManager.cs" Line="33" Column="38" />
+      <File FileName="Assets/Scripts/Ash/Powerups.cs" Line="24" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,7 +15,9 @@
             <Node name="Assembly-CSharp" expanded="True">
               <Node name="Assets" expanded="True">
                 <Node name="Scripts" expanded="True">
-                  <Node name="Maily.cs" selected="True" />
+                  <Node name="Ash" expanded="True">
+                    <Node name="EngagementManager.cs" selected="True" />
+                  </Node>
                 </Node>
               </Node>
             </Node>
