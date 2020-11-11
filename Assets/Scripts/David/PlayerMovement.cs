@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour {
 
@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour {
     private Rigidbody2D rb2d;
     private LayerMask groundLayer;
     private int jumping = 0;
+    public GameObject score;
     
     void Start()
     {
@@ -20,6 +21,10 @@ public class PlayerMovement : MonoBehaviour {
 
     void FixedUpdate()
     {
+        if (Input.GetAxisRaw ("Cancel") > 0) {
+            SceneManager.LoadScene("Overworld Scene");
+        }
+
         float moveHorizontal = Input.GetAxisRaw ("Horizontal");
 
         float moveVertical = Input.GetAxisRaw ("Jump");
@@ -46,11 +51,12 @@ public class PlayerMovement : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("HIT!");
-        // Debug-draw all contact points and normals
-        foreach (ContactPoint2D contact in collision.contacts)
-        {
-            Debug.DrawRay(contact.point, contact.normal, Color.red);
+        if (collision.gameObject.tag == "Issue") {
+            IssueController ic = collision.gameObject.GetComponent("IssueController") as IssueController;
+            if (ic && !ic.dying) {
+                ic.RemoveIssue();
+                jumping = 5;
+            }
         }
     }
 }
