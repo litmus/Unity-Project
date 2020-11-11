@@ -372,7 +372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 100
-  score: {fileID: 0}
+  score: {fileID: 2075274601}
 --- !u!50 &642842870
 Rigidbody2D:
   serializedVersion: 4

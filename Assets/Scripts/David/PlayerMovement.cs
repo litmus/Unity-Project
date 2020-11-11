@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour {
     private LayerMask groundLayer;
     private int jumping = 0;
     public GameObject score;
+    private TextMesh scoreMesh;
+    private int issuesSquashed = 0;
     
     void Start()
     {
@@ -17,6 +19,8 @@ public class PlayerMovement : MonoBehaviour {
         rb2d.freezeRotation = true;
 
         groundLayer = LayerMask.GetMask("Ground");
+
+        scoreMesh = score.GetComponent("TextMesh") as TextMesh;
     }
 
     void FixedUpdate()
@@ -55,6 +59,10 @@ public class PlayerMovement : MonoBehaviour {
             IssueController ic = collision.gameObject.GetComponent("IssueController") as IssueController;
             if (ic && !ic.dying) {
                 ic.RemoveIssue();
+
+                issuesSquashed++;
+                scoreMesh.text = issuesSquashed + " / 20";
+
                 jumping = 5;
             }
         }
