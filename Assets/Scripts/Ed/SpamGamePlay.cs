@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SpamGamePlay : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class SpamGamePlay : MonoBehaviour
     public int NumberOfEnemies = 20;
 
     public GameObject projectile;
+    public GameObject startGameLabel;
 
     public GameObject spam;
 
@@ -18,17 +20,32 @@ public class SpamGamePlay : MonoBehaviour
 
     public int NumberOfSpamsInPlay => GameObject.FindGameObjectsWithTag("Enemy").Length;
 
+    public int Score 
+    { 
+        get 
+        {
+            return int.Parse(GameObject.FindGameObjectsWithTag("Score")[0].GetComponent<Text>().text);
+        }
+        set 
+        {
+            GameObject.FindGameObjectsWithTag("Score")[0].GetComponent<Text>().text = value.ToString();
+        }
+    }
+
     private MailyPlayer player;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Maily").GetComponent<MailyPlayer>();
+        startGameLabel = GameObject.FindGameObjectsWithTag("StartGameLabel")[0];
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        startGameLabel.active = !IsGameRunning;
 
         if (Input.GetKeyDown("escape"))
         {
@@ -63,7 +80,19 @@ public class SpamGamePlay : MonoBehaviour
 
     void SetUp()
     {
+        Score = 0;
+        player.GetComponent<MailyPlayer>().ResetToHomePosition();
+        RemoveAllExistingSpam();
         AddSpam();
+    }
+
+    void RemoveAllExistingSpam()
+    {
+        var enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach(var enemy in enemies)
+        {
+            Destroy(enemy);
+        }
     }
 
     void AddSpam()
@@ -85,8 +114,15 @@ public class SpamGamePlay : MonoBehaviour
         }
     }
 
-    void GameOver()
+    public void GameOver()
     {
+        IsGameRunning = false;
+
+        var projectiles = GameObject.FindGameObjectsWithTag("Projectile");
+        foreach (var projectile in projectiles)
+        {
+            Destroy(projectile);
+        }
 
     }
 
