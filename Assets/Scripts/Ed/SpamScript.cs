@@ -20,9 +20,14 @@ public class SpamScript : MonoBehaviour
     {
         if(spamGamePlay.IsGameRunning)
         {
-            transform.Translate(new Vector3(0, -.2f, 0) * 3 * Time.deltaTime);
+            transform.Translate(new Vector3(0, -.1f * spamGamePlay.Level, 0) * 3 * Time.deltaTime);
         }
     
+        //if spam touches ground game over
+        if(transform.position.y < -3)
+        {
+            spamGamePlay.GameOver();
+        }
     }
 
     //if item is offscreen destroy

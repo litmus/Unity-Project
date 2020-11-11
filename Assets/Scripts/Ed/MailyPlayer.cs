@@ -23,7 +23,7 @@ public class MailyPlayer : MonoBehaviour
         if (spamGamePlay.IsGameRunning)
         {
             float horizontalInput = Input.GetAxis("Horizontal");
-            transform.Translate(new Vector3(horizontalInput, 0, 0) * 3 * Time.deltaTime);
+            transform.Translate(new Vector3(horizontalInput, 0, 0) * 10 * Time.deltaTime);
 
             //clamp player to screen
             Vector3 viewPos = transform.position;

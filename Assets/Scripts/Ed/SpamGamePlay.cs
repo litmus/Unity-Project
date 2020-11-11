@@ -9,7 +9,7 @@ public class SpamGamePlay : MonoBehaviour
     public bool IsGameRunning = false;
 
     public int MaxProjectiles = 2;
-    public int NumberOfEnemies = 20;
+    public int NumberOfEnemies = 10;
 
     public GameObject projectile;
     public GameObject startGameLabel;
@@ -29,6 +29,19 @@ public class SpamGamePlay : MonoBehaviour
         set 
         {
             GameObject.FindGameObjectsWithTag("Score")[0].GetComponent<Text>().text = value.ToString();
+        }
+    }
+
+    public int Level
+    {
+
+        get 
+        {
+            return int.Parse(GameObject.Find("LevelValueText").GetComponent<Text>().text);
+        }
+        set 
+        {
+            GameObject.Find("LevelValueText").GetComponent<Text>().text = value.ToString();
         }
     }
 
@@ -64,6 +77,7 @@ public class SpamGamePlay : MonoBehaviour
 
             if(NumberOfSpamsInPlay == 0)
             {
+                Level++;
                 AddSpam();
             }
         }
@@ -81,6 +95,7 @@ public class SpamGamePlay : MonoBehaviour
     void SetUp()
     {
         Score = 0;
+        Level = 1;
         player.GetComponent<MailyPlayer>().ResetToHomePosition();
         RemoveAllExistingSpam();
         AddSpam();
@@ -103,13 +118,14 @@ public class SpamGamePlay : MonoBehaviour
 
         for (int i = 0; i < NumberOfEnemies; i++)
         {
+            Debug.Log(i);
             var newSpam = Instantiate(spam);
-            if (i == 10)
+            if (i == 5)
             {
                 yOffset = -2;
                 lastAddedPosition = spam.transform.position;
             }
-            newSpam.transform.position = new Vector3(lastAddedPosition.x + 2, newSpam.transform.position.y + yOffset);
+            newSpam.transform.position = new Vector3(lastAddedPosition.x + 4, newSpam.transform.position.y + yOffset);
             lastAddedPosition = newSpam.transform.position;
         }
     }
