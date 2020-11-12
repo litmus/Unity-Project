@@ -38,8 +38,11 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Ash\Engagement.cs" />
      <Compile Include="Assets\Scripts\Ash\EngagementManager.cs" />
+     <Compile Include="Assets\Scripts\Ash\GameManager.cs" />
      <Compile Include="Assets\Scripts\Ash\Player.cs" />
      <Compile Include="Assets\Scripts\Ash\Powerups.cs" />
+     <Compile Include="Assets\Scripts\Ash\PowerupsManager.cs" />
+     <Compile Include="Assets\Scripts\Ash\UIManager.cs" />
      <Compile Include="Assets\Scripts\Maily.cs" />
      <Compile Include="Assets\Scripts\Trigger.cs" />
     <Reference Include="UnityEngine">

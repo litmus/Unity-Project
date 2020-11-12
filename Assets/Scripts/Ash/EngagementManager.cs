@@ -8,17 +8,20 @@ public class EngagementManager : MonoBehaviour
     [SerializeField] private GameObject _engagementPrefab;
     [SerializeField] private GameObject _engagementsContainer;
 
-    private bool _spawnEngagement = true;
-    private float _waitPeriod = 3.0f;
+    private float _waitPeriod = 2.0f;
+
+    private GameManager gameManager;
+
+    public int engagementPoints = 10;
     
     void Start()
     {
-        StartCoroutine(SpawnEngagement());
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
-    private IEnumerator SpawnEngagement()
+    public IEnumerator SpawnEngagement()
     {
-        while (_spawnEngagement)
+        while (gameManager.gameRunning)
         {
             Vector3 spawn = new Vector3(Random.Range(-9, 9), 8);
             GameObject eng = Instantiate(_engagementPrefab, spawn, Quaternion.identity);
@@ -30,14 +33,16 @@ public class EngagementManager : MonoBehaviour
 
     public void TestedInLitmus()
     {
-        // set engagement score to 2x
+        engagementPoints = 50;
+
+        StartCoroutine(TestedInLitmusTimer());
     }
 
     public void ForwardToFriends()
     {
-        _waitPeriod = 1.0f;
+        _waitPeriod = 0.5f;
 
-        // Need to increase after 5s
+        StartCoroutine(ForwardToFriendsTimer());
     }
 
     public void HolidaySeason()
@@ -49,4 +54,17 @@ public class EngagementManager : MonoBehaviour
             eng.transform.parent = _engagementsContainer.transform;
         }
     }
+
+    private IEnumerator TestedInLitmusTimer()
+    {
+        yield return new WaitForSeconds(4);
+        engagementPoints = 10;
+    }
+
+    private IEnumerator ForwardToFriendsTimer()
+    {
+        yield return new WaitForSeconds(4);
+        _waitPeriod = 2.0f;
+    }
+
 }

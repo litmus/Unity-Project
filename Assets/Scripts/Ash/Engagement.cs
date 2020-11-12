@@ -4,17 +4,25 @@ using UnityEngine;
 
 public class Engagement : MonoBehaviour
 {
+    private GameManager gameManager;
+    private EngagementManager engagementManager;
+    [SerializeField] private AudioClip _clip;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        engagementManager = GameObject.Find("EngagementsManager").GetComponent<EngagementManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        float speed = Random.Range(1.0f, 10.0f);
+        float speed = Random.Range(0.1f, 10.0f);
         transform.Translate(Vector3.down * speed * Time.deltaTime);
+
+        
+        Destroy(this.gameObject, 5.0f);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -22,17 +30,12 @@ public class Engagement : MonoBehaviour
         if (collision.tag == "Floor")
         {
             Destroy(this.gameObject);
-
-            // animation? breaking of the engagement
         }
-
-
         if (collision.tag == "Player")
         {
+            AudioSource.PlayClipAtPoint(_clip, transform.position);
             Destroy(this.gameObject);
-            Debug.Log("Player Hit");
-
-            // add to engagement
+            gameManager.AddPoints(engagementManager.engagementPoints);
         }
     }
 
