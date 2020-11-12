@@ -4,9 +4,16 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - Board
   - ShapeSpawner
   - PlayerInput
+=======
+  - Projectile
+  - Enemy
+  - Score
+  - StartGameLabel
+>>>>>>> main
   layers:
   - Default
   - TransparentFX
@@ -44,6 +51,7 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+<<<<<<< HEAD
   - name: bg
     uniqueID: 2823571761
     locked: 0
@@ -56,3 +64,5 @@ TagManager:
   - name: Game Elements
     uniqueID: 3284237343
     locked: 0
+=======
+>>>>>>> main
