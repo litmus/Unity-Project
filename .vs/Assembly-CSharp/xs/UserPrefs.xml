@@ -1,13 +1,22 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Trigger.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Maily.cs">
     <Files>
       <File FileName="Assets/Scripts/Trigger.cs" Line="22" Column="6" />
+      <File FileName="Assets/Scripts/Maily.cs" Line="22" Column="1" />
+      <File FileName="Assets/Scripts/Ash/Player.cs" Line="28" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Assembly-CSharp" expanded="True">
-            <Node name="Assembly-CSharp" expanded="True" />
+            <Node name="Assembly-CSharp" expanded="True">
+              <Node name="Assets" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="Ash" expanded="True" />
+                  <Node name="Maily.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
