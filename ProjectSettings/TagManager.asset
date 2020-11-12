@@ -3,7 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Issue
+  - Floor
+  - Pregame
+  - Soundtrack
+  - Projectile
+  - Enemy
+  - Score
+  - StartGameLabel
+  - ShapeSpawner
+  - PlayerInput
+  - Board
   layers:
   - Default
   - TransparentFX
@@ -13,8 +24,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Background
+  - Ground
   - 
   - 
   - 
@@ -38,6 +49,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2406032435
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

@@ -18,6 +18,4 @@ public class Maily : MonoBehaviour
 
         transform.Translate(new Vector3(horizontalInput, verticalInput, 0) * 3 * Time.deltaTime);
     }
-
-
 }

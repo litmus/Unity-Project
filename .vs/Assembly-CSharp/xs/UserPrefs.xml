@@ -1,8 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Maily.cs">
     <Files>
-      <File FileName="Assets/Scripts/Maily.cs" Line="24" Column="1" />
       <File FileName="Assets/Scripts/Trigger.cs" Line="22" Column="6" />
+      <File FileName="Assets/Scripts/Maily.cs" Line="22" Column="1" />
+      <File FileName="Assets/Scripts/Ash/Player.cs" Line="28" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,6 +12,7 @@
             <Node name="Assembly-CSharp" expanded="True">
               <Node name="Assets" expanded="True">
                 <Node name="Scripts" expanded="True">
+                  <Node name="Ash" expanded="True" />
                   <Node name="Maily.cs" selected="True" />
                 </Node>
               </Node>
