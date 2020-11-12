@@ -36,6 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\IssueTextController.cs" />
      <Compile Include="Assets\Scripts\Ash\Engagement.cs" />
      <Compile Include="Assets\Scripts\Ash\EngagementManager.cs" />
      <Compile Include="Assets\Scripts\Ash\GameManager.cs" />
@@ -43,7 +44,20 @@
      <Compile Include="Assets\Scripts\Ash\Powerups.cs" />
      <Compile Include="Assets\Scripts\Ash\PowerupsManager.cs" />
      <Compile Include="Assets\Scripts\Ash\UIManager.cs" />
-     <Compile Include="Assets\Scripts\Maily.cs" />
+     <Compile Include="Assets\Scripts\David\IssueController.cs" />
+     <Compile Include="Assets\Scripts\David\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\Ed\Laser.cs" />
+     <Compile Include="Assets\Scripts\Ed\MailyPlayer.cs" />
+     <Compile Include="Assets\Scripts\Ed\SpamGamePlay.cs" />
+     <Compile Include="Assets\Scripts\Ed\SpamScript.cs" />
+     <Compile Include="Assets\Scripts\Litris\Board.cs" />
+     <Compile Include="Assets\Scripts\Litris\GameController.cs" />
+     <Compile Include="Assets\Scripts\Litris\PlayerInput.cs" />
+     <Compile Include="Assets\Scripts\Litris\ScoreManager.cs" />
+     <Compile Include="Assets\Scripts\Litris\Shape.cs" />
+     <Compile Include="Assets\Scripts\Litris\ShapeSpawner.cs" />
+     <Compile Include="Assets\Scripts\Litris\SoundManager.cs" />
+     <Compile Include="Assets\Scripts\Litris\Vectorf.cs" />
      <Compile Include="Assets\Scripts\Trigger.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2019.4.14f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>

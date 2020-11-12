@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour {
 
         float moveHorizontal = Input.GetAxisRaw ("Horizontal");
 
-        float moveVertical = Input.GetAxisRaw ("Jump");
+        float moveVertical = Input.GetAxisRaw("Jump");
         float jumpImpulse = 0f;
 
         if (moveVertical > 0) {

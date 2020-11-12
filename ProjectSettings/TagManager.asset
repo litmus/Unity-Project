@@ -12,43 +12,45 @@ TagManager:
   - Enemy
   - Score
   - StartGameLabel
+  - ShapeSpawner
+  - PlayerInput
+  - Board
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  -
+  - 
   - Water
   - UI
-  -
-  -
+  - 
+  - 
+  - Background
   - Ground
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   m_SortingLayers:
   - name: Background
-    uniqueID: 3918233971
+    uniqueID: 2406032435
     locked: 0
   - name: Default
     uniqueID: 0
