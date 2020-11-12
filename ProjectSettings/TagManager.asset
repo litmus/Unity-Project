@@ -4,26 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - Board
-  - ShapeSpawner
-  - PlayerInput
-=======
-=======
-  - Issue
->>>>>>> main
-  - Floor
-  - Pregame
-  - Soundtrack
-  - Projectile
   - Enemy
-  - Score
-  - StartGameLabel
-<<<<<<< HEAD
->>>>>>> main
-=======
->>>>>>> main
+  - Projectile
   layers:
   - Default
   - TransparentFX
@@ -33,10 +15,6 @@ TagManager:
   - UI
   - 
   - 
-<<<<<<< HEAD
-=======
-  - Ground
->>>>>>> main
   - 
   - 
   - 
@@ -62,30 +40,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-<<<<<<< HEAD
   - name: Default
     uniqueID: 0
     locked: 0
-<<<<<<< HEAD
-  - name: bg
-    uniqueID: 2823571761
-    locked: 0
-  - name: ui
-    uniqueID: 581426189
-    locked: 0
-  - name: Game UI
-    uniqueID: 1550321515
-    locked: 0
-  - name: Game Elements
-    uniqueID: 3284237343
-    locked: 0
-=======
->>>>>>> main
-=======
-  - name: Background
-    uniqueID: 3918233971
-    locked: 0
-  - name: Default
-    uniqueID: 0
-    locked: 0
->>>>>>> main
