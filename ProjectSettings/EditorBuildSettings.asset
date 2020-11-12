@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ash.unity
     guid: f5b8a4c216f3344f2af19b0a1c7099bb
+  - enabled: 1
+    path: Assets/Scenes/Sam.unity
+    guid: 6df54521ae1624e839903003d957bd91
   m_configObjects: {}

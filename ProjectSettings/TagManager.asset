@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Board
+  - ShapeSpawner
+  - PlayerInput
   layers:
   - Default
   - TransparentFX
@@ -40,4 +43,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: bg
+    uniqueID: 2823571761
+    locked: 0
+  - name: ui
+    uniqueID: 581426189
+    locked: 0
+  - name: Game UI
+    uniqueID: 1550321515
+    locked: 0
+  - name: Game Elements
+    uniqueID: 3284237343
     locked: 0
