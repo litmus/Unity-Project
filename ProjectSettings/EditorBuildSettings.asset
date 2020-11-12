@@ -13,7 +13,10 @@ EditorBuildSettings:
     guid: f5b8a4c216f3344f2af19b0a1c7099bb
   - enabled: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> main
     path: Assets/Scenes/Chris.unity
     guid: c4115a76141e646c9a996fcc09fb7f57
   - enabled: 1
@@ -26,6 +29,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Eddie.unity
     guid: 60b9ff908e2e6443a8e4dccf86f0ef81
   - enabled: 1
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
     path: Assets/Scenes/Sam.unity
     guid: 6df54521ae1624e839903003d957bd91
