@@ -43,6 +43,12 @@
      <Compile Include="Assets\Scripts\Ash\Powerups.cs" />
      <Compile Include="Assets\Scripts\Ash\PowerupsManager.cs" />
      <Compile Include="Assets\Scripts\Ash\UIManager.cs" />
+     <Compile Include="Assets\Scripts\David\IssueController.cs" />
+     <Compile Include="Assets\Scripts\David\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\Ed\Laser.cs" />
+     <Compile Include="Assets\Scripts\Ed\MailyPlayer.cs" />
+     <Compile Include="Assets\Scripts\Ed\SpamGamePlay.cs" />
+     <Compile Include="Assets\Scripts\Ed\SpamScript.cs" />
      <Compile Include="Assets\Scripts\Maily.cs" />
      <Compile Include="Assets\Scripts\Trigger.cs" />
     <Reference Include="UnityEngine">
