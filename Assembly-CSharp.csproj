@@ -36,6 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\IssueTextController.cs" />
      <Compile Include="Assets\Scripts\Ash\Engagement.cs" />
      <Compile Include="Assets\Scripts\Ash\EngagementManager.cs" />
      <Compile Include="Assets\Scripts\Ash\GameManager.cs" />
@@ -49,6 +50,14 @@
      <Compile Include="Assets\Scripts\Ed\MailyPlayer.cs" />
      <Compile Include="Assets\Scripts\Ed\SpamGamePlay.cs" />
      <Compile Include="Assets\Scripts\Ed\SpamScript.cs" />
+     <Compile Include="Assets\Scripts\Litris\Board.cs" />
+     <Compile Include="Assets\Scripts\Litris\GameController.cs" />
+     <Compile Include="Assets\Scripts\Litris\PlayerInput.cs" />
+     <Compile Include="Assets\Scripts\Litris\ScoreManager.cs" />
+     <Compile Include="Assets\Scripts\Litris\Shape.cs" />
+     <Compile Include="Assets\Scripts\Litris\ShapeSpawner.cs" />
+     <Compile Include="Assets\Scripts\Litris\SoundManager.cs" />
+     <Compile Include="Assets\Scripts\Litris\Vectorf.cs" />
      <Compile Include="Assets\Scripts\Maily.cs" />
      <Compile Include="Assets\Scripts\Trigger.cs" />
     <Reference Include="UnityEngine">
