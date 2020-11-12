@@ -125,7 +125,7 @@ public class SpamGamePlay : MonoBehaviour
                 yOffset = -2;
                 lastAddedPosition = spam.transform.position;
             }
-            newSpam.transform.position = new Vector3(lastAddedPosition.x + 4, newSpam.transform.position.y + yOffset);
+            newSpam.transform.position = new Vector3(lastAddedPosition.x + 3.5f, newSpam.transform.position.y + yOffset);
             lastAddedPosition = newSpam.transform.position;
         }
     }
