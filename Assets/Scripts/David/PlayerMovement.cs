@@ -9,9 +9,15 @@ public class PlayerMovement : MonoBehaviour {
     private Rigidbody2D rb2d;
     private LayerMask groundLayer;
     private int jumping = 0;
+    private bool jumpPressed = false;
+    private Vector2 velocity;
+    
     public GameObject score;
     private TextMesh scoreMesh;
     private int issuesSquashed = 0;
+
+    public GameObject leftWall;
+    public GameObject rightWall;
     
     void Start()
     {
@@ -23,7 +29,7 @@ public class PlayerMovement : MonoBehaviour {
         scoreMesh = score.GetComponent("TextMesh") as TextMesh;
     }
 
-    void FixedUpdate()
+    void Update()
     {
         if (Input.GetAxisRaw ("Cancel") > 0) {
             SceneManager.LoadScene("Overworld Scene");
@@ -35,35 +41,56 @@ public class PlayerMovement : MonoBehaviour {
         float jump = 0f;
 
         if (moveVertical > 0) {
-            RaycastHit2D hit2D = Physics2D.Raycast(rb2d.position - new Vector2(0f, 0.5f), Vector2.down, 0.2f, groundLayer);
-            RaycastHit2D hit2DRight = Physics2D.Raycast(rb2d.position - new Vector2(-0.5f, 0.5f), Vector2.down, 0.2f, groundLayer);
-            RaycastHit2D hit2DLeft = Physics2D.Raycast(rb2d.position - new Vector2(0.5f, 0.5f), Vector2.down, 0.2f, groundLayer);
-            
-            if (hit2D || hit2DRight || hit2DLeft) {
-                jumping = 5;
+            if (!jumpPressed) {
+                jumpPressed = true;
+
+                RaycastHit2D hit2D = Physics2D.Raycast(rb2d.position - new Vector2(0f, 0.5f), Vector2.down, 0.2f, groundLayer);
+                RaycastHit2D hit2DRight = Physics2D.Raycast(rb2d.position - new Vector2(-0.5f, 0.5f), Vector2.down, 0.2f, groundLayer);
+                RaycastHit2D hit2DLeft = Physics2D.Raycast(rb2d.position - new Vector2(0.5f, 0.5f), Vector2.down, 0.2f, groundLayer);
+                
+                if (hit2D || hit2DRight || hit2DLeft) {
+                    jumping = 10;
+                }
             }
+        } else {
+            jumpPressed = false;
         }
+
         if (jumping > 0) {
-            jumping--;
-            jump = 4;
+            if (moveVertical > 0) {
+                jumping--;
+            } else {
+                jumping -= 2;
+            }
+            jump = 3;
         }
 
         Vector2 movement = new Vector2 (moveHorizontal, jump);
 
         rb2d.AddForce (movement * speed);
+
+        Vector3 wallv = leftWall.transform.position;
+        leftWall.transform.position = new Vector3(wallv.x, transform.position.y, wallv.z);
+        wallv = rightWall.transform.position;
+        rightWall.transform.position = new Vector3(wallv.x, transform.position.y, wallv.z);
+
+        velocity = rb2d.velocity;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Issue") {
-            IssueController ic = collision.gameObject.GetComponent("IssueController") as IssueController;
-            if (ic && !ic.dying) {
-                ic.RemoveIssue();
+            IssueController ic = collision.gameObject.GetComponent<IssueController>();
+            
+            if (velocity.y < 0) {
+                if (ic && !ic.dying) {
+                    ic.RemoveIssue();
 
-                issuesSquashed++;
-                scoreMesh.text = issuesSquashed + " / 20";
+                    issuesSquashed++;
+                    scoreMesh.text = issuesSquashed + " / 20";
 
-                jumping = 5;
+                    jumping = 5;
+                }
             }
         }
     }
