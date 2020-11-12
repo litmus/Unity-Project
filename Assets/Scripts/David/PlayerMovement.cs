@@ -87,7 +87,7 @@ public class PlayerMovement : MonoBehaviour {
                     ic.RemoveIssue();
 
                     issuesSquashed++;
-                    scoreMesh.text = issuesSquashed + " / 20";
+                    scoreMesh.text = issuesSquashed + " / 10";
 
                     jumping = 5;
                 }

@@ -6,6 +6,8 @@ using UnityEngine;
 public class IssueController : MonoBehaviour
 {
 
+    public GameObject linkedDecoration;
+
     public bool dying = false;
     private float h;
 
@@ -23,6 +25,9 @@ public class IssueController : MonoBehaviour
             cc2d.enabled = false;
         }
         Destroy(gameObject, 3);
+        if (linkedDecoration) {
+            Destroy(linkedDecoration);
+        }
     }
 
     // Update is called once per frame
