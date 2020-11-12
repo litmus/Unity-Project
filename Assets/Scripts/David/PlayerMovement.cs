@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour {
 
     public GameObject leftWall;
     public GameObject rightWall;
+
+    public ParticleSystem confetti;
     
     void Start()
     {
@@ -38,7 +40,7 @@ public class PlayerMovement : MonoBehaviour {
         float moveHorizontal = Input.GetAxisRaw ("Horizontal");
 
         float moveVertical = Input.GetAxisRaw ("Jump");
-        float jump = 0f;
+        float jumpImpulse = 0f;
 
         if (moveVertical > 0) {
             if (!jumpPressed) {
@@ -62,10 +64,10 @@ public class PlayerMovement : MonoBehaviour {
             } else {
                 jumping -= 2;
             }
-            jump = 3;
+            jumpImpulse = 3;
         }
 
-        Vector2 movement = new Vector2 (moveHorizontal, jump);
+        Vector2 movement = new Vector2 (moveHorizontal, jumpImpulse);
 
         rb2d.AddForce (movement * speed);
 
@@ -90,6 +92,10 @@ public class PlayerMovement : MonoBehaviour {
                     scoreMesh.text = issuesSquashed + " / 10";
 
                     jumping = 5;
+
+                    if (issuesSquashed >= 10 && confetti) {
+                        confetti.Play();
+                    }
                 }
             }
         }
