@@ -15,15 +15,21 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 155
     width: 1920
     height: 900
 =======
+=======
+>>>>>>> main
     x: 632.6667
     y: 50
     width: 1920
     height: 1035.3334
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
   m_ShowMode: 4
   m_Title: 
@@ -51,12 +57,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 0
     width: 1920
     height: 900
   m_MinSize: {x: 875, y: 521}
   m_MaxSize: {x: 10000, y: 10000}
 =======
+=======
+>>>>>>> main
     y: 504
     width: 1069
     height: 482
@@ -98,6 +107,9 @@ MonoBehaviour:
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
   controlID: 35
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
 --- !u!114 &4
 MonoBehaviour:
@@ -118,10 +130,13 @@ MonoBehaviour:
     y: 880
     width: 1920
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
 =======
+=======
+>>>>>>> main
     height: 1036
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -185,6 +200,9 @@ MonoBehaviour:
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
   controlID: 79
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
 --- !u!114 &7
 MonoBehaviour:
@@ -205,6 +223,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 0
     width: 1314
     height: 383
@@ -213,6 +232,8 @@ MonoBehaviour:
   vertical: 0
   controlID: 4131
 =======
+=======
+>>>>>>> main
     y: 1016
     width: 1920
     height: 20
@@ -242,6 +263,9 @@ MonoBehaviour:
 =======
     width: 1069
     height: 504
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
@@ -285,6 +309,9 @@ MonoBehaviour:
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
   controlID: 80
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
 --- !u!114 &10
 MonoBehaviour:
@@ -476,15 +503,21 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 0
     width: 320
     height: 550
 =======
+=======
+>>>>>>> main
     x: 2088
     y: 80
     width: 464
     height: 965
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &14
@@ -508,6 +541,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: 0
     y: 210
@@ -544,6 +578,8 @@ MonoBehaviour:
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 3623de862c9f038ef8ffa79c04f7c1fa
 =======
+=======
+>>>>>>> main
     x: 1702
     y: 513.3334
     width: 384
@@ -775,15 +811,21 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 0
     width: 871
     height: 362
 =======
+=======
+>>>>>>> main
     x: 632.6667
     y: 80
     width: 1068
     height: 483
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
@@ -797,7 +839,11 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 417.65848, y: 158.1497, z: -70.34752}
+=======
+    m_Target: {x: 0.38442743, y: 1.0693443, z: -0.18753308}
+>>>>>>> main
 =======
     m_Target: {x: 0.38442743, y: 1.0693443, z: -0.18753308}
 >>>>>>> main
@@ -853,7 +899,11 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 61.365116
+=======
+    m_Target: 10
+>>>>>>> main
 =======
     m_Target: 10
 >>>>>>> main
@@ -1041,12 +1091,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 750
     width: 1313
     height: 289
   m_ViewDataDictionary: {fileID: 0}
 =======
+=======
+>>>>>>> main
     x: 1702
     y: 80
     width: 384
