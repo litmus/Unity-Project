@@ -36,7 +36,6 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\IssueTextController.cs" />
      <Compile Include="Assets\Scripts\Ash\Engagement.cs" />
      <Compile Include="Assets\Scripts\Ash\EngagementManager.cs" />
      <Compile Include="Assets\Scripts\Ash\GameManager.cs" />
