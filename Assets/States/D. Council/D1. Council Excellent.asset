@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc771aed5a2b44817bab014e000a9e0f, type: 3}
+  m_Name: D1. Council Excellent
+  m_EditorClassIdentifier: 
+  storyText: 'You enter the council chambers. The council members are loudly discussing
+    lunch ideas.
+
+
+    1. Interrupt and ask for help.
+
+    2. Leave and go to the
+    Aviary.'
+  nextStates:
+  - {fileID: 11400000, guid: e0155a7a04d94415b920a996bc4b799d, type: 2}
+  - {fileID: 11400000, guid: 25cec6c9998734e2c98e257836e1cf8d, type: 2}

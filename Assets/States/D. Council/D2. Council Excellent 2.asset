@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc771aed5a2b44817bab014e000a9e0f, type: 3}
+  m_Name: D2. Council Excellent 2
+  m_EditorClassIdentifier: 
+  storyText: 'You consult the council and they immediately offer wizardly insight.
+    You feel confident in sending your reply scroll! The Council returns to their
+    lunch discussion.
+
+
+    1. Go to the Aviary.'
+  nextStates:
+  - {fileID: 11400000, guid: 533c2ea67f8ef4c868d88894e34cde1b, type: 2}

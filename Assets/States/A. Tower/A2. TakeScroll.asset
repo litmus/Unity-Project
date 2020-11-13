@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc771aed5a2b44817bab014e000a9e0f, type: 3}
+  m_Name: A2. TakeScroll
+  m_EditorClassIdentifier: 
+  storyText: "Deciding your coffee can wait, you take the scroll from the sparrow.
+    It chirps a thank you and flies back out of the window. You unfurl the scroll
+    and read the message. A knight in a distant land needs help! \n\n1, Leave your
+    tower to help.\n2. Go back to your coffee."
+  nextStates:
+  - {fileID: 11400000, guid: b9c77f81bdb65437a9b6ae6b74c2fee9, type: 2}
+  - {fileID: 11400000, guid: 98f675439da5742acbcb3749ad120e64, type: 2}

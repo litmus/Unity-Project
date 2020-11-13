@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc771aed5a2b44817bab014e000a9e0f, type: 3}
+  m_Name: E2. Aviary Excellent or Okay
+  m_EditorClassIdentifier: 
+  storyText: 'In the Academy Aviary, dozens of reply sparrows chirp happily at your
+    arrival. A sparrow lands on your shoulder, ready to take your reply scroll.
+
+
+
+    1.
+    Give the reply scroll to the sparrow.
+
+    2. Leave the aviary and consult with
+    the Council of Elders.'
+  nextStates:
+  - {fileID: 11400000, guid: 3562ea8fb790b4809846bfcf35a6002f, type: 2}
+  - {fileID: 11400000, guid: f38fe0bfaafca4e47aa473c7c0e05d85, type: 2}
