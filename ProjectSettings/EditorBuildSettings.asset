@@ -15,9 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Ash.unity
     guid: f5b8a4c216f3344f2af19b0a1c7099bb
   - enabled: 1
-    path: Assets/Scenes/Chris.unity
-    guid: c4115a76141e646c9a996fcc09fb7f57
-  - enabled: 1
     path: Assets/Scenes/David.unity
     guid: a1f3641968a3348d09d167c004c54945
   - enabled: 1
@@ -26,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sam.unity
     guid: 6df54521ae1624e839903003d957bd91
+  - enabled: 1
+    path: Assets/Scenes/Chris.unity
+    guid: a95dd8fb01b0c498298555f457d992ef
   m_configObjects: {}

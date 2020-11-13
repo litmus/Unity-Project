@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc771aed5a2b44817bab014e000a9e0f, type: 3}
+  m_Name: A4. Ignore again
+  m_EditorClassIdentifier: 
+  storyText: 'You''ve never let a bird interrupt you before, and you''re not about
+    to start. As you''re drinking the magic coffee, you hear something from outside
+    the window... a flapping sound, growing louder by the second...
+
+
+    1. Look
+    out the window.
+
+    2. Ignore the sound.'
+  nextStates:
+  - {fileID: 11400000, guid: d0631d24da3624abc95d5a9fb0745e84, type: 2}
+  - {fileID: 11400000, guid: f0df153d1bb8b447c9c88925b5ae61be, type: 2}

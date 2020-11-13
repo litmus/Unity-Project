@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc771aed5a2b44817bab014e000a9e0f, type: 3}
+  m_Name: G2. Don't Look Not Good
+  m_EditorClassIdentifier: 
+  storyText: 'Restating your previous position on birds, you ignore the sound. It
+    grows louder and louder, until a giant sparrow holding a giant scroll flies through
+    the window, spilling your coffee.
+
+
+    GAME OVER!
+
+
+    Your Rating: Not Good
+
+
+    1.
+    Try Again
+
+    2. Quit to Title'
+  nextStates:
+  - {fileID: 11400000, guid: 8ccb0fef190bb451aa4b6126d22dd479, type: 2}
+  - {fileID: 11400000, guid: a1d11a914a56b497989230be9b99f9bf, type: 2}

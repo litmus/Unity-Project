@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc771aed5a2b44817bab014e000a9e0f, type: 3}
+  m_Name: B2. Hall Okay
+  m_EditorClassIdentifier: 
+  storyText: "B2. Hall Okay\n\nYou descend from your tower into the Main Hall. \n\n1.
+    Go to the Library.\n2. Go to the Aviary."
+  nextStates:
+  - {fileID: 11400000, guid: 56316736596d0432da4af5d6d1ef3572, type: 2}
+  - {fileID: 11400000, guid: 954c08626ba1b4935ad224c3dbffe734, type: 2}

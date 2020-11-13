@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc771aed5a2b44817bab014e000a9e0f, type: 3}
+  m_Name: A5. Ignore Scroll
+  m_EditorClassIdentifier: 
+  storyText: 'You ignore the scroll for now. Waving your wand, you conjure a cup
+    of magic coffee. As you''re enjoying your enchanted brew, a larger sparrow flies
+    in the window with a larger scroll.
+
+
+    1. Take the large scroll
+
+    2. Ignore
+    the bird and keep sipping your brew.'
+  nextStates:
+  - {fileID: 11400000, guid: afbb3c2a84b71484baacf06536f228ee, type: 2}
+  - {fileID: 11400000, guid: 408827662cf13428c84f5c5ca6925072, type: 2}

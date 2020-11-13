@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc771aed5a2b44817bab014e000a9e0f, type: 3}
+  m_Name: A1. StartingState
+  m_EditorClassIdentifier: 
+  storyText: 'You''re sitting in a smallish room at the top of a tallish tower of
+    the Academy of Support Wizardry. You''re just about to take a magic coffee break
+    when a sparrow flies into your window. The sparrow lands on your desk, and you
+    can see a small scroll clutched in its beak. The sparrow stares at you.
+
+
+    1.
+    Take the scroll.
+
+    2. Ignore the bird and make some magic coffee.'
+  nextStates:
+  - {fileID: 11400000, guid: 17347df5696854c56821b86b31b859e4, type: 2}
+  - {fileID: 11400000, guid: 987b80bf7b78b45acafb883db6ca1d31, type: 2}
