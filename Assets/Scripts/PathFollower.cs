@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PathFollower : MonoBehaviour
 {
@@ -16,6 +17,12 @@ public class PathFollower : MonoBehaviour
 
     bool m_onLastNode = false;
     public bool m_isStopped = false;
+
+    public GameObject titleObject;
+    public Text titleText;
+
+    public AudioClip m_moveSound;
+    public AudioClip m_gameSound;
 
     void CheckNode() {
       if (CurrentNode == PathNodes.Length) {
@@ -48,6 +55,7 @@ public class PathFollower : MonoBehaviour
 
     public void MoveForward() {
       m_isStopped = false;
+      titleText.text = "";
       Timer += Time.deltaTime * MoveSpeed;
       if (Maily.transform.position != CurrentPositionHolder) {
         Maily.transform.position = Vector3.Lerp(startPosition, CurrentPositionHolder, Timer);
@@ -55,6 +63,12 @@ public class PathFollower : MonoBehaviour
         if (CurrentNode <= PathNodes.Length - 1) {
           if (PathNodes[CurrentNode].m_isWaypoint) {
             m_waypointNode = PathNodes[CurrentNode];
+            titleText.text = m_waypointNode.title;
+
+            if (m_waypointNode.gameLaunchId != null && m_waypointNode.gameLaunchId != "") {
+              AudioSource.PlayClipAtPoint(m_gameSound, Camera.main.transform.position, 1);
+            }
+            titleText.transform.position = Maily.transform.position;
             m_isStopped = true;
           }
           CurrentNode++;

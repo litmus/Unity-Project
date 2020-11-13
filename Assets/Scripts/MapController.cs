@@ -19,6 +19,7 @@ public class MapController : MonoBehaviour
     if (m_startingPath.m_isStopped) {
       if (Input.GetButton("Horizontal") && Input.GetAxisRaw("Horizontal") > 0) {
         m_startingPath.MoveForward();
+        AudioSource.PlayClipAtPoint(m_startingPath.m_moveSound, Camera.main.transform.position, 1);
       }
 
       if (Input.GetButton("Submit")) {
