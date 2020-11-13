@@ -1,0 +1,5 @@
+﻿You're sitting in a smallish room at the top of a tallish tower of the Academy of Support Wizardry. You're just about to take a magic
+coffee break when a sparrow flies into your window. The sparrow lands on your desk, and you can see a small scroll clutched in its beak. The sparrow stares at you.
+
+1. Take the scroll.
+2. Ignore the bird and make some magic coffee.

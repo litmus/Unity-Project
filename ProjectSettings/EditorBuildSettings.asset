@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Sam.unity
     guid: 6df54521ae1624e839903003d957bd91
   - enabled: 1
-    path: Assets/Scenes/Chris.unity
+    path: Assets/Support Quest.unity
     guid: a95dd8fb01b0c498298555f457d992ef
+  - enabled: 1
+    path: Assets/Scenes/Chris.unity
+    guid: eb7dc0d349be8597881c864024f3e383
   m_configObjects: {}
