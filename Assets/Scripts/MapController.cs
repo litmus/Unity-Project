@@ -25,6 +25,10 @@ public class MapController : MonoBehaviour
       if (Input.GetButton("Submit")) {
         m_startingPath.m_waypointNode.LaunchGame();
       }
+
+      if (Input.GetButton("Cancel")) {
+        Application.LoadLevel(0);
+      }
     }
   }
 }
